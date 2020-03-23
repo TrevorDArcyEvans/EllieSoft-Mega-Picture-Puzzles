@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<!-- saved from url=(0054)http://devfiles.myopera.com/articles/649/example5.html -->
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+
+    <!-- Change this if you want to allow scaling -->
+    <meta name="viewport" content="width=default-width; user-scalable=no" />
+
+    <title>Picture Scraper</title>
+
+    <link rel="stylesheet" href="common.css" type="text/css" />
+
+    <style type="text/css">
+      *
+      {
+        margin: 0px;
+      }
+    </style>
+
+    <script language="javascript" type="text/javascript" src="jquery.min.js"></script>
+
+    <script type="text/javascript" src="common.js"></script>
+
+    <script type="text/javascript" src="BrowserDetect.js"></script>
+    <script type="text/javascript" src="AlphabetFiles.js"></script>
+    <script type="text/javascript" src="AlphabetTracer.js"></script>
+
+  </head>
+
+  <body onload="OnBodyLoad();" onresize="ResizeCanvas();ReloadCanvas();">
+    <a id="spinner" style="position: absolute; z-index: 1000;"><img class="icon" src="./reloj.png"></a>
+    <div>
+      <canvas id="MainCanvas" width="600" height="600"></canvas>
+    </div>
+    <table id="footer" width="100%" style="position:absolute;bottom:0px;z-index: 1000;">
+      <tr align="center">
+        <!-- td><a onclick="ReloadCanvas();"><img class="icon" src="./Resources/Icons/VistaICO/Undo.png"></a></td -->
+        <td><a onclick="ToggleSound();"><img id="AudioController" class="icon" src="./Resources/Icons/1227973961782836377Farmeral_audio-icon.svg.med.png"></a></td>
+        <td><a onclick="ClearCanvas();RandomCanvas();"><img class="icon" src="./Resources/Icons/VistaICO/Refresh.png"></a></td>
+        <td><a onclick="location.href='More_iOS/more.html';"><img class="icon" src="./Resources/Icons/VistaICO/Symbol-Information.png"></a></td>
+      </tr>
+    </table>
+  </body>
+</html>
